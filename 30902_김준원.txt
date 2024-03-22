@@ -1,0 +1,12 @@
+30902_김준원
+1. select distinct employee_id from employees; //distinct 열의 중복을 제거하는 명령어
+2.
+ 1  select *
+  2  from jobs
+  3  order by  min_salary (desc);   // order by [열]        오름차순 정렬
+                                             // order by [열] desc;  내름차순 정렬
+
+3.1 select *
+ 2. from jobs
+ 3. where min_salary=4000; // min_salary가 4000인 값을(행) 검색
+         // where절은 특정 조건을 기준으로 원하는 행을 출력하는데 사용한다.
