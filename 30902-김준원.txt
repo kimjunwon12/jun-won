@@ -1,0 +1,21 @@
+30902_김준원_0402
+
+문제 10> jobs테이블에서 job_title이
+	P로 시작하는 행전체를 출력하시오.
+	select * from kobs
+	2 where job_title like 'P%';
+
+문제 11> union문을 이용해서 jobs테이블에서
+job_title이 'P'로 시작하고 max_salary가 8 000이상인 행전체를 출력하시오
+
+1 select * from jobs
+2 where job_title like 'P%'
+3 union // 합집합 // minus차집합// intersect 교집합 // union all중복도 모두 출력
+4 select * from jobs
+5 where max_salary >=8000;
+
+함수 : 특정한 결과 값을 얻기 위해 데이터를 입력할 수 있는
+특수 명령어로, 내장함수(이미 만들어져 있는)와 사용자 정의함수(직접 만드는)가 있다.
+
+문제 12> jobs테이블에서
+job_title 데이터를 모두 대문자로, job_id를 모두 소문자로 바꾸어 출력하시오.
